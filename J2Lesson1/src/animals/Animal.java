@@ -9,11 +9,17 @@ package animals;
 public abstract class Animal {
     protected String name;
     protected int run_limit;
+    protected int swim_limit;
+    protected float jump_limit;
+    // Флаги прохождения дистанции
+    protected boolean checkRunLimit = false;
+    protected boolean checkSwimLimit = false;
+    protected boolean checkJumpLimit = false;
 
     public abstract String voice();
 
     public boolean run(int length) {
-        return run_limit >= length;
+        return checkRunLimit = run_limit >= length;
     }
     
     @Override

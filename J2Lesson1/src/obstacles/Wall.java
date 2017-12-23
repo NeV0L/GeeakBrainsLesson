@@ -1,10 +1,11 @@
 package obstacles;
 import animals.*;
 /**
- * Write a description of class Wall here.
+ * Write a description of class J2Lesson1 here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Volsky Nikita
+ * @version dated Dec 22, 2017
+ * @link https://github.com/NeV0L/GeeakBrainsLesson
  */
 public class Wall {
     private float height;

@@ -7,12 +7,11 @@ package animals;
  * @link https://github.com/NeV0L/GeeakBrainsLesson
  */
 public class Hippo extends Animal implements Swimable {
-    private int swim_limit;
-
     public Hippo(String name) {
         this.name = name;
         this.run_limit = 50;
-        swim_limit = 200;
+        this.swim_limit = 200;
+        this.jump_limit = 0;
     }
 
     public String voice() {
@@ -20,6 +19,6 @@ public class Hippo extends Animal implements Swimable {
     }
 
     public boolean swim(int length) {
-        return swim_limit >= length;
+        return this.checkSwimLimit = this.swim_limit >= length;
     }
 }

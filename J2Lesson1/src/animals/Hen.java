@@ -7,12 +7,11 @@ package animals;
  * @link https://github.com/NeV0L/GeeakBrainsLesson
  */
 public class Hen extends Animal implements Jumpable {
-    private float jump_limit;
-
     public Hen(String name) {
         this.name = name;
         this.run_limit = 100;
-        jump_limit = 10f;
+        this.jump_limit = 10f;
+        this.swim_limit = 0;
     }
 
     public String voice() {
@@ -20,6 +19,6 @@ public class Hen extends Animal implements Jumpable {
     }
 
     public boolean jump(float height) {
-        return jump_limit >= height;
+        return this.checkJumpLimit = this.jump_limit >= height;
     }
 }

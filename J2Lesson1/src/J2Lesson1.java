@@ -1,5 +1,8 @@
 import animals.*;
 import obstacles.*;
+
+import java.util.ArrayList;
+
 /**
  * Write a description of class J2Lesson1 here.
  *
@@ -8,11 +11,14 @@ import obstacles.*;
  * @link https://github.com/NeV0L/GeeakBrainsLesson
  */
 public class J2Lesson1 {
-    
+
     public static void main(String[] args) {
         TeamAnimal teamAnimal = new TeamAnimal("Рожденные побеждать");
         Animal[] zoo = {new Cat("Murzik"), new Hen("Izzy"), new Hippo("Hippopo")};
         Course course = new Course();
+
+        new ArrayList<String>();
+
 
         teamAnimal.setTeamAnimal(zoo);
         teamAnimal.infoTeam();

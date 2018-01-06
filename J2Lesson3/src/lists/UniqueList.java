@@ -1,3 +1,5 @@
+package lists;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
@@ -14,13 +16,6 @@ public class UniqueList {
     // Файл для чтения
     private static final String FILE_NAME = "ListWords.txt";
 
-    public static void main(String[] args) {
-        // выводим только уникальные слова
-        checkDuplicate(readFile(), false);
-        // считаем сколько раз встречается каждое слово
-        checkDuplicate(readFile(), true);
-    }
-
     /**
      * Считаем сколько раз встречается каждое слово.
      * @param stringArrayList - список слов для проверки
@@ -29,19 +24,15 @@ public class UniqueList {
     public static void checkDuplicate(ArrayList<String> stringArrayList, boolean isCount) {
         HashMap<String, Integer> hashMap = new HashMap<>();
 
-        Integer count;
         for (String str: stringArrayList) {
-            count = hashMap.get(str);
-            hashMap.put(str, count == null ? 1 : count + 1);
+            hashMap.put(str, hashMap.getOrDefault(str, 0) + 1);
         }
 
         if (isCount) {
             System.out.println(hashMap);
         } else {
-            Iterator it = hashMap.entrySet().iterator();
-            while (it.hasNext()) {
-                Map.Entry entry = (Map.Entry) it.next();
-                if (entry.getValue() == (Integer) 1 ) {
+            for (Map.Entry<String, Integer> entry: hashMap.entrySet()) {
+                if (entry.getValue().equals(1)) {
                     System.out.println(entry.getKey());
                 }
             }

@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac958ada-f1e3-4e4d-8f13-ea70df0271c1" name="Default" comment="J2L5 New class for fill array.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Comp.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="ac958ada-f1e3-4e4d-8f13-ea70df0271c1" name="Default" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/J2Lesson5.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ThreadHomeWork.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/WorkMeasure.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -275,6 +268,14 @@
       <option name="presentableId" value="Default" />
       <updated>1515612594190</updated>
     </task>
+    <task id="LOCAL-00001" summary="J2L5 New class for fill array.">
+      <created>1515615359062</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1515615359062</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
